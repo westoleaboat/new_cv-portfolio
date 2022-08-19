@@ -196,6 +196,11 @@ section {
   width: 85%;
   margin-inline: auto;
 }
+@media (max-width: 700px) {
+  section {
+    width: 100%;
+  }
+}
 
 /* ABOUT */
 .a__container {
@@ -247,6 +252,50 @@ section {
 }
 
 /* PROJECTS */
+.web-projects {
+  margin-top: 2rem;
+  background-image: linear-gradient(to bottom, rgba(190, 204, 224, 0.9058823529), #EDF1F4);
+  padding: 5rem 2rem 1rem 2rem;
+  position: relative;
+}
+.web-projects h2 {
+  position: absolute;
+  top: -80px;
+}
+@media (max-width: 700px) {
+  .web-projects {
+    position: static;
+    padding: 2rem;
+  }
+  .web-projects h2 {
+    position: static;
+    margin: 3rem;
+  }
+}
+
+.python-projects {
+  background-color: #EDF1F4;
+  position: relative;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.python-projects h2 {
+  position: absolute;
+  top: -80px;
+  left: 32px;
+}
+@media (max-width: 700px) {
+  .python-projects {
+    position: static;
+    padding: 1rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
+  .python-projects h2 {
+    position: static;
+  }
+}
+
 hr {
   border: 1px solid green;
 }
@@ -266,7 +315,7 @@ hr {
   display: flex;
   flex-direction: row-reverse;
   gap: 4rem;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 
 @media (max-width: 1200px) {
@@ -304,6 +353,9 @@ hr {
 }
 .p__richtext {
   width: 50%;
+}
+.p__richtext p {
+  text-align: justify;
 }
 
 @media (max-width: 1200px) {
@@ -348,7 +400,6 @@ hr {
 
 /* TABS */
 .tabs {
-  max-width: 1250px;
   /* border: 1px solid darkblue; */
   padding: 4rem 1.5rem;
   display: flex;
@@ -398,6 +449,11 @@ hr {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 700px) {
+  .tabs__image img {
+    width: 100%;
+  }
+}
 
 .tabs__textarea h3 {
   margin-top: 0;
@@ -406,6 +462,7 @@ hr {
 
 .tabs__textarea p {
   font-size: 1.2rem;
+  text-align: justify;
 }
 
 p.selected {
