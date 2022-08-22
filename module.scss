@@ -57,39 +57,34 @@ header {
 
   }
 
-  // .subtitle {
-  //     /* text-align: center;
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: center; */
-  // }
-
   a {
-      /* pointer-events: none; */
       text-decoration: none;
   }
 
   h1 {
       font-size: 4.5rem;
       margin: 0 0 1.5rem 0;
-      /* margin-bottom: 3.5rem; */
   }
 
-  /* h2 {
-      font-size: 2.2rem;
-      margin: 0 0 1.5rem 0;
+ 
 
-  } */
+  h1 > span {
+    background-color: #becce0e7;
+    color: #2a4e67;
+    padding: 1rem;
+}
 
-      @media (max-width: 1200px) {
-          h1 {
-              font-size: 2.5rem;
-          }
+  .h__container > h3 {
+      font-size: 1.7rem;
+  }
 
-          /* h2 {
-              font-size: 2rem;
-          } */
-      }
+      // @media (max-width: 1200px) {
+      //     h1 {
+      //         font-size: 2.5rem;
+      //         padding: 0rem;
+      //     }
+
+      // }
 
       @media (max-width: 700px) {
           h1 {
@@ -97,33 +92,20 @@ header {
               margin-bottom: 2rem;
           }
 
-          /* h2 {
-              font-size: 1.7rem;
-          } */
       }
-
-  h1 > span {
-      background-color: #becce0e7;
-      color: #2a4e67;
-      padding: 1rem;
-  }
-
-  .h__container > h3 {
-      font-size: 1.7rem;
-  }
 
       @media (max-width: 1200px) {
           h1 > span {
               background-color: #becce000;
               color: var(--white);
-              padding: 1rem;
+              // padding: 0rem;
+              padding: 0rem;
           }
 
           .h__container > h3 {
               font-size: 1.2rem;
           }
       }
-  
 
 .h__arrow-down {
   background-image: url('./assets/header/down-arrow-download-svgrepo-com.svg');
@@ -229,28 +211,31 @@ section {
       padding-left: 2rem;
   }
 
-      @media (max-width: 1200px) {
-          .a__paragraph {
-              max-width: 100%;
-              font-size: 1.6rem;
-          }
+      // @media (max-width: 1200px) {
+      //     .a__paragraph {
+      //         max-width: 100%;
+      //         font-size: 1.6rem;
+      //     }
 
-          .a__image {
-              max-width: 500px;
-          }
+      //     .a__image {
+      //         max-width: 500px;
+      //     }
+      // }
+
+  @media (max-width: 650px) {
+      .a__paragraph {
+        max-width: 100%;
+        font-size: 1.3rem;
+        // padding-left: 0.7rem;
+        // padding-left: 0rem;
+        padding: 0rem 1.5rem;
+        text-align: justify;
       }
 
-      @media (max-width: 650px) {
-          .a__paragraph {
-              max-width: 100%;
-              font-size: 1.3rem;
-              padding-left: 0.7rem;
-          }
-
-          .a__image {
-              max-width: 350px;
-          }
+      .a__image {
+          max-width: 350px;
       }
+  }
 
   .a__image > img {
       width: 100%;
@@ -275,14 +260,20 @@ section {
 
   h2 {
     position: absolute;
+    text-decoration: underline;
     top: -80px;
   }
   @media (max-width:700px) {
-    position: static;
-    padding: 2rem;
+    // position: static;
+    padding: 5rem 2rem 3rem 2rem;
+    // top: -75px;
+    // text-decoration: underline;
+
     h2 {
-      position: static;
-      margin: 3rem;
+      // position: static;
+      justify-content: start;
+      // text-decoration: underline;
+      // margin: 3rem;
     }
   }
 
@@ -298,15 +289,22 @@ section {
   h2 {
     position: absolute;
     top: -80px;
+
     left: 32px;
+    text-decoration: underline;
+
   }
   @media (max-width:700px) {
-    position: static;
+    // position: static;
     padding: 1rem;
-    margin-bottom: 0rem;
-    margin-top: 0rem;
+    // margin-bottom: 0rem;
+    // margin-top: 0rem;
     h2 {
-      position: static;
+      // position: static;
+      justify-content: start;
+      // text-decoration: underline;
+      // text-align: start;
+      
     }
 
 
@@ -558,7 +556,14 @@ p.selected {
   }
 
 }
-  
+
+@media (max-width: 500px) {
+  .tabs {
+      flex-direction: column;
+      padding: 5rem 0rem 2rem 0rem;
+
+  }
+}
 /* FOOTER */
 
 footer {

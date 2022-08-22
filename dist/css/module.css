@@ -67,38 +67,14 @@ header {
 }
 
 a {
-  /* pointer-events: none; */
   text-decoration: none;
 }
 
 h1 {
   font-size: 4.5rem;
   margin: 0 0 1.5rem 0;
-  /* margin-bottom: 3.5rem; */
 }
 
-/* h2 {
-    font-size: 2.2rem;
-    margin: 0 0 1.5rem 0;
-
-} */
-@media (max-width: 1200px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  /* h2 {
-      font-size: 2rem;
-  } */
-}
-@media (max-width: 700px) {
-  h1 {
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-  }
-  /* h2 {
-      font-size: 1.7rem;
-  } */
-}
 h1 > span {
   background-color: rgba(190, 204, 224, 0.9058823529);
   color: #2a4e67;
@@ -109,11 +85,17 @@ h1 > span {
   font-size: 1.7rem;
 }
 
+@media (max-width: 700px) {
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+}
 @media (max-width: 1200px) {
   h1 > span {
     background-color: rgba(190, 204, 224, 0);
     color: var(--white);
-    padding: 1rem;
+    padding: 0rem;
   }
   .h__container > h3 {
     font-size: 1.2rem;
@@ -224,19 +206,12 @@ section {
   padding-left: 2rem;
 }
 
-@media (max-width: 1200px) {
-  .a__paragraph {
-    max-width: 100%;
-    font-size: 1.6rem;
-  }
-  .a__image {
-    max-width: 500px;
-  }
-}
 @media (max-width: 650px) {
   .a__paragraph {
     max-width: 100%;
     font-size: 1.3rem;
+    padding: 0rem 1.5rem;
+    text-align: justify;
   }
   .a__image {
     max-width: 350px;
@@ -260,16 +235,15 @@ section {
 }
 .web-projects h2 {
   position: absolute;
+  text-decoration: underline;
   top: -80px;
 }
 @media (max-width: 700px) {
   .web-projects {
-    position: static;
-    padding: 2rem;
+    padding: 5rem 2rem 3rem 2rem;
   }
   .web-projects h2 {
-    position: static;
-    margin: 3rem;
+    justify-content: start;
   }
 }
 
@@ -283,16 +257,14 @@ section {
   position: absolute;
   top: -80px;
   left: 32px;
+  text-decoration: underline;
 }
 @media (max-width: 700px) {
   .python-projects {
-    position: static;
     padding: 1rem;
-    margin-bottom: 0rem;
-    margin-top: 0rem;
   }
   .python-projects h2 {
-    position: static;
+    justify-content: start;
   }
 }
 
@@ -512,6 +484,12 @@ p.selected {
   } */
   .tabs__textarea {
     overflow: auto;
+  }
+}
+@media (max-width: 500px) {
+  .tabs {
+    flex-direction: column;
+    padding: 5rem 0rem 2rem 0rem;
   }
 }
 /* FOOTER */
