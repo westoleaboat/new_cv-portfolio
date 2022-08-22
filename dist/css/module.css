@@ -22,7 +22,7 @@ html, body {
 
 header {
   min-height: 100vh;
-  background-image: url("./assets/header/wallpaper-header-2.jpeg");
+  background-image: url("./assets/header/wallpaper-header-2.webp");
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
   background-repeat: no-repeat;
   background-attachment: fixed;
