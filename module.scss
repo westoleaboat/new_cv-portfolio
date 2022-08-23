@@ -347,7 +347,7 @@ section {
   }
   @media (max-width:700px) {
     // position: static;
-    padding: 1rem;
+    padding: 0rem 1rem;
 
     // padding-top: 2.5rem;
     // margin-bottom: 0rem;
@@ -356,7 +356,7 @@ section {
       // position: static;
       justify-content: start;
       // top: -85px;
-      transform: translateY(-95px);
+      transform: translateY(-85px);
       margin-bottom: 0;
 
       // text-decoration: underline;

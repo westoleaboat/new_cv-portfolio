@@ -287,11 +287,11 @@ section {
 }
 @media (max-width: 700px) {
   .python-projects {
-    padding: 1rem;
+    padding: 0rem 1rem;
   }
   .python-projects h2 {
     justify-content: start;
-    transform: translateY(-95px);
+    transform: translateY(-85px);
     margin-bottom: 0;
   }
 }
