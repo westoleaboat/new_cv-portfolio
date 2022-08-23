@@ -193,10 +193,6 @@ section {
   }
 }
 
-.pp-bg {
-  background-color: #60a7dd;
-}
-
 .wp-bg {
   background-image: linear-gradient(to bottom, rgba(190, 204, 224, 0.9058823529), #EDF1F4);
 }
@@ -246,13 +242,14 @@ section {
 /* PROJECTS */
 .web-projects {
   margin-top: 2rem;
-  padding: 5rem 2rem 1rem 2rem;
+  padding: 0rem 2rem 4rem 2rem;
   position: relative;
 }
 .web-projects h2 {
-  position: absolute;
   text-decoration: underline;
-  top: -80px;
+  transform: translateY(-40px);
+  text-align: left;
+  font-size: 3rem;
 }
 @media (max-width: 700px) {
   .web-projects {
@@ -265,17 +262,17 @@ section {
 
 .python-projects {
   position: relative;
-  padding-top: 5rem;
 }
 .python-projects h2 {
-  position: absolute;
-  top: -20px;
-  left: 32px;
+  transform: translateY(-80px);
+  text-align: start;
   text-decoration: underline;
+  margin-bottom: 0;
 }
 @media (max-width: 700px) {
   .python-projects {
     padding: 1rem;
+    padding-top: 2.5rem;
   }
   .python-projects h2 {
     justify-content: start;
@@ -386,7 +383,7 @@ hr {
 /* TABS */
 .tabs {
   /* border: 1px solid darkblue; */
-  padding: 4rem 1.5rem;
+  padding: 0rem 1.5rem 4rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -407,6 +404,7 @@ hr {
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+  min-width: 150px;
 }
 
 .tabs__body {

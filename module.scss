@@ -194,7 +194,7 @@ section {
 
 .pp-bg {
   // background-color: #EDF1F4;
-  background-color: #60a7dd;
+  // background-color: #60a7dd;
 }
 
 .wp-bg {
@@ -270,15 +270,18 @@ section {
   // background-color: linear-gradient(var(#becce0e7), var(#EDF1F4));
   // background-color: (#becce0e7,#EDF1F4);
   // background-image: linear-gradient(to bottom,#becce0e7,#EDF1F4);
-  padding: 5rem 2rem 1rem 2rem;
+  padding: 0rem 2rem 4rem 2rem;
   position: relative;
 
   // #EDF1F4
 
   h2 {
-    position: absolute;
+    // position: absolute;
     text-decoration: underline;
-    top: -80px;
+    // top: -80px;
+    transform: translateY(-40px);
+    text-align: left;
+    font-size: 3rem;
   }
   @media (max-width:700px) {
     // position: static;
@@ -301,20 +304,25 @@ section {
   // background-color: #EDF1F4; 
   position: relative;
   // margin-top: 5rem;
-  padding-top: 5rem;
+  // padding-top: 5rem;
   // margin-bottom: 2rem;
 
   h2 {
-    position: absolute;
-    top: -20px;
+    // position: absolute;
+    // top: -20px;
+    transform: translateY(-80px);
 
-    left: 32px;
+    // left: 32px;
+    text-align: start;
     text-decoration: underline;
+    margin-bottom: 0;
+
 
   }
   @media (max-width:700px) {
     // position: static;
     padding: 1rem;
+    padding-top: 2.5rem;
     // margin-bottom: 0rem;
     // margin-top: 0rem;
     h2 {
@@ -452,7 +460,7 @@ hr {
   // background-color: rosybrown;
   // max-width: 1250px;
   /* border: 1px solid darkblue; */
-  padding: 4rem 1.5rem;
+  padding: 0rem 1.5rem 4rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -477,6 +485,8 @@ hr {
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+  min-width: 150px;
+
 }
 
 .tabs__body {
