@@ -292,6 +292,7 @@ section {
   .python-projects h2 {
     justify-content: start;
     transform: translateY(-95px);
+    margin-bottom: 0;
   }
 }
 
@@ -301,6 +302,11 @@ hr {
 
 .projects > h2 {
   margin-bottom: 10vh;
+}
+@media (max-width: 700px) {
+  .projects > h2 {
+    margin-bottom: 0vh;
+  }
 }
 
 .p__project {
@@ -313,6 +319,7 @@ hr {
 @media (max-width: 1200px) {
   .p__project {
     flex-direction: column;
+    gap: 2rem;
   }
 }
 .p__image {
@@ -421,6 +428,9 @@ hr {
   text-transform: uppercase;
   cursor: pointer;
   min-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tabs__body {
@@ -512,6 +522,9 @@ p.selected {
   } */
   .tabs__textarea {
     overflow: auto;
+  }
+  .tabs__body {
+    width: 95%;
   }
 }
 @media (max-width: 500px) {

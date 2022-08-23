@@ -348,6 +348,7 @@ section {
   @media (max-width:700px) {
     // position: static;
     padding: 1rem;
+
     // padding-top: 2.5rem;
     // margin-bottom: 0rem;
     // margin-top: 0rem;
@@ -356,7 +357,7 @@ section {
       justify-content: start;
       // top: -85px;
       transform: translateY(-95px);
-
+      margin-bottom: 0;
 
       // text-decoration: underline;
       // text-align: start;
@@ -374,6 +375,11 @@ hr {
 
 .projects > h2 {
   margin-bottom: 10vh;
+
+  @media (max-width:700px) {
+    margin-bottom: 0vh;
+  
+  }
 }
 
 
@@ -388,6 +394,7 @@ hr {
 @media (max-width: 1200px) {
   .p__project {
       flex-direction: column;
+      gap: 2rem;
   }
 }
 
@@ -516,7 +523,9 @@ hr {
   text-transform: uppercase;
   cursor: pointer;
   min-width: 150px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tabs__body {
@@ -594,6 +603,7 @@ p.selected {
   .tabs {
       flex-direction: column;
       padding: 0rem 0rem 2rem 0rem;
+      
 
   }
 
@@ -624,6 +634,10 @@ p.selected {
   } */
   .tabs__textarea {
       overflow: auto;
+  }
+
+  .tabs__body {
+    width: 95%;
   }
 
 }
