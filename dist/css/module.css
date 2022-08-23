@@ -432,6 +432,11 @@ hr {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 700px) {
+  .tabs__header p {
+    font-size: 0.9rem;
+  }
+}
 
 .tabs__body {
   width: 75%;

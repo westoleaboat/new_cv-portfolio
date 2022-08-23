@@ -526,6 +526,11 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width:700px) {
+    font-size: 0.9rem;
+
+  }
 }
 
 .tabs__body {
