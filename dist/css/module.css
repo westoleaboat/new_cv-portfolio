@@ -206,6 +206,16 @@ section {
   margin-bottom: 10vh;
 }
 
+.about h2 {
+  text-align: left;
+  text-decoration: underline;
+}
+@media (max-width: 700px) {
+  .about {
+    padding: 0rem 2rem 3rem 2rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .a__container {
     flex-direction: column;
@@ -253,10 +263,11 @@ section {
 }
 @media (max-width: 700px) {
   .web-projects {
-    padding: 5rem 2rem 3rem 2rem;
+    padding: 0rem 2rem 3rem 2rem;
   }
   .web-projects h2 {
     justify-content: start;
+    margin: 0;
   }
 }
 
@@ -383,7 +394,7 @@ hr {
 /* TABS */
 .tabs {
   /* border: 1px solid darkblue; */
-  padding: 0rem 1.5rem 4rem 1.5rem;
+  padding: 0rem 1.5rem 5rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -397,6 +408,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-weight: bold;
 }
 
 .tabs__header p {
