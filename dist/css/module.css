@@ -481,7 +481,7 @@ hr {
 p.selected {
   color: var(--white);
   background-color: #112d4e;
-  padding: 20px 0px;
+  padding: 20px;
   font-weight: bold;
   border-radius: 7px;
 }
@@ -516,19 +516,30 @@ p.selected {
     overflow-x: auto;
     /* width: 100%; */
   }
-  .tabs__content {
-    transition: transform 250ms ease-in-out;
-    transform: translateX(-50%);
-    /* transform: translateX(0); */
-  }
   /* .tabs__content.selected {
       transform: none;
       transition: none;
 
   } */
+}
+@media (max-width: 800px) and (max-width: 700px) {
+  .tabs__header {
+    gap: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .tabs__content {
+    transition: transform 250ms ease-in-out;
+    transform: translateX(-50%);
+    /* transform: translateX(0); */
+  }
+}
+@media (max-width: 800px) {
   .tabs__textarea {
     overflow: auto;
   }
+}
+@media (max-width: 800px) {
   .tabs__body {
     width: 95%;
   }

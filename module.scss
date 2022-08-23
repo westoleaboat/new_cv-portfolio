@@ -580,7 +580,7 @@ p.selected {
   // text-decoration: 2px darkblue underline;
   color: var(--white);
   background-color: #112d4e;
-  padding: 20px 0px;
+  padding: 20px;
   font-weight: bold;
   border-radius: 7px;
 
@@ -621,6 +621,9 @@ p.selected {
       justify-content: start;
       overflow-x: auto;
       /* width: 100%; */
+      @media (max-width:700px) {
+        gap: 1rem;
+      }
               
   }
 
