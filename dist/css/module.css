@@ -376,10 +376,11 @@ hr {
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
+  font-weight: bold;
 }
 
 .p__fancylink {
-  color: #112d4e;
+  color: #2a4e67;
   text-decoration: none;
   position: relative;
 }
