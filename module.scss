@@ -150,6 +150,14 @@ header {
 
 }
 
+.sub2 > p {
+  font-size: 1.25rem;
+  @media (max-width: 700px) {
+    font-size: 1rem;
+  }
+
+}
+
   @media (max-width: 1200px) {
       .sub1 > h2 {
           font-size: 2.2rem;
@@ -184,7 +192,16 @@ section {
   }
 }
 
+.pp-bg {
+  // background-color: #EDF1F4;
+  background-color: #60a7dd;
+}
 
+.wp-bg {
+  background-image: linear-gradient(to bottom,#becce0e7,#EDF1F4);
+
+
+}
 /* ABOUT */
 
 .a__container {
@@ -252,7 +269,7 @@ section {
   // background-color: #becce0e7;
   // background-color: linear-gradient(var(#becce0e7), var(#EDF1F4));
   // background-color: (#becce0e7,#EDF1F4);
-  background-image: linear-gradient(to bottom,#becce0e7,#EDF1F4);
+  // background-image: linear-gradient(to bottom,#becce0e7,#EDF1F4);
   padding: 5rem 2rem 1rem 2rem;
   position: relative;
 
@@ -281,14 +298,15 @@ section {
 
 
 .python-projects {
-  background-color: #EDF1F4;
+  // background-color: #EDF1F4; 
   position: relative;
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+  // margin-top: 5rem;
+  padding-top: 5rem;
+  // margin-bottom: 2rem;
 
   h2 {
     position: absolute;
-    top: -80px;
+    top: -20px;
 
     left: 32px;
     text-decoration: underline;
@@ -302,6 +320,8 @@ section {
     h2 {
       // position: static;
       justify-content: start;
+      top: -85px;
+
       // text-decoration: underline;
       // text-align: start;
       
@@ -320,13 +340,7 @@ hr {
   margin-bottom: 10vh;
 }
 
-.projects  h3 {
-  // position: absolute;
-  margin: 0;
-  font-size: 1.6rem;
-  text-shadow: .8px .8px #9b9595;
-  /* text-decoration: underline; */
-}
+
 
 .p__project {
   display: flex;
@@ -376,6 +390,16 @@ hr {
     p {
       text-align: justify;
 
+    }
+
+    h3 {
+      // font-size: 25px;
+      margin: 0;
+      font-size: 1.6rem;
+      text-shadow: .8px .8px #9b9595;
+      /* text-decoration: underline; */
+      @media (max-width: 1200px) {
+      }
     }
   }
 
@@ -434,15 +458,15 @@ hr {
   align-items: center;
   gap: 30px;
   overflow: hidden;
-  margin-bottom: 2rem;
+  // margin-bottom: 2rem;
 
   
 }
 
 .tabs__header {
-  width: 20%;
+  width: 25%;
   padding-right: .5rem;
-  border-right: 3px solid darkblue;
+  // border-right: 3px solid darkblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -456,7 +480,7 @@ hr {
 }
 
 .tabs__body {
-  width: 80%;
+  width: 75%;
   
 }
 
@@ -498,7 +522,14 @@ hr {
 }
 
 p.selected {
-  text-decoration: 2px darkblue underline;
+  // text-decoration: 2px darkblue underline;
+  color: var(--white);
+  background-color: #112d4e;
+  padding: 20px 0px;
+  font-weight: bold;
+  border-radius: 7px;
+
+
 }
 
 .tabs__content.selected {
