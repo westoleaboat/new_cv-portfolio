@@ -2,11 +2,11 @@
 
 //selecting all tbas with data-attributte (specified insode tag in html)
 const tabs = Array.from(document.querySelectorAll("[data-tabs]"))
-console.log(tabs)
+// console.log(tabs)
 
 //selecting all single projects content
 const contents = Array.from(document.querySelectorAll("[data-content]"))
-console.log(contents)
+// console.log(contents)
 
 //looping through eacg rtab and listentning for click event
 tabs.forEach((tab, index) => {
