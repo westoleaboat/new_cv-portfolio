@@ -227,7 +227,7 @@ section {
     text-align: justify;
   }
   .a__image {
-    max-width: 350px;
+    display: none;
   }
 }
 .a__image > img {
@@ -520,13 +520,9 @@ p.selected {
     transform: translateX(-50%);
     /* transform: translateX(0); */
   }
-}
-@media (max-width: 800px) {
   .tabs__textarea {
     overflow: auto;
   }
-}
-@media (max-width: 800px) {
   .tabs__body {
     width: 95%;
   }
