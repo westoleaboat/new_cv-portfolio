@@ -202,7 +202,7 @@ h2 {
   /* color: var(--green-dark); */
 
 
-}
+} 
 
 
 section {
@@ -296,7 +296,8 @@ section {
   }
 
   .a__image {
-    max-width: 350px;
+    // max-width: 350px;
+    display: none;
   }
 }
 
@@ -474,6 +475,11 @@ hr {
 
     /* text-decoration: underline; */
     @media (max-width: 1200px) {}
+  }
+
+  ul {
+    // text-decoration: none;list
+    // list-style: none;
   }
 }
 
