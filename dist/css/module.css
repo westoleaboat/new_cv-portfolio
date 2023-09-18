@@ -181,7 +181,12 @@ section {
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
-  margin-bottom: 10vh;
+  /* margin-bottom: 10vh; */
+  margin: 10vh 0;
+}
+
+.a__container .a__image {
+  width: 300px;
 }
 
 .about h2 {
@@ -200,8 +205,10 @@ section {
   }
 }
 .a__paragraph {
-  max-width: 550px;
-  font-size: 1.8rem;
+  /* max-width: 550px; */
+  max-width: 60%;
+  /* font-size: 1.8rem; */
+  font-size: 20px;
   font-weight: 400;
   border-left: 8px solid #4675a1;
   padding-left: 2rem;
@@ -220,7 +227,8 @@ section {
     text-align: justify;
   }
   .a__image {
-    max-width: 350px;
+    /* max-width: 350px; */
+    display: none;
   }
 }
 .a__image > img {
