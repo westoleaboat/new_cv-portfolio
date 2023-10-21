@@ -57,3 +57,29 @@ window.onload = function () {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}"
   document.body.appendChild(css)
 }
+
+
+
+function isElementInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function revealOnScroll() {
+  const sections = document.querySelectorAll('.p__project');
+
+  sections.forEach((section) => {
+      if (isElementInViewport(section)) {
+          section.classList.add('visible');
+          // console.log('visible')
+      }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);

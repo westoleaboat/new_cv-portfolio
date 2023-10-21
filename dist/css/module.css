@@ -6,11 +6,14 @@
   --green-dark: #2a4e67;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   font-family: "Quicksand", sans-serif;
   scroll-behavior: smooth;
@@ -181,10 +184,9 @@ section {
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
-  /* margin-bottom: 10vh; */
-  margin: 10vh 0;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
 }
-
 .a__container .a__image {
   width: 300px;
 }
@@ -205,9 +207,7 @@ section {
   }
 }
 .a__paragraph {
-  /* max-width: 550px; */
   max-width: 60%;
-  /* font-size: 1.8rem; */
   font-size: 20px;
   font-weight: 400;
   border-left: 8px solid #4675a1;
@@ -227,7 +227,6 @@ section {
     text-align: justify;
   }
   .a__image {
-    /* max-width: 350px; */
     display: none;
   }
 }
@@ -297,10 +296,18 @@ hr {
 }
 
 .p__project {
+  opacity: 0;
+  transform: translateY(40px); /* Initially, move elements down slightly */
+  transition: opacity 0.5s, transform 0.5s;
   display: flex;
   flex-direction: row-reverse;
   gap: 4rem;
   margin-bottom: 4rem;
+}
+
+.p__project.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 1200px) {
@@ -521,13 +528,9 @@ p.selected {
     transform: translateX(-50%);
     /* transform: translateX(0); */
   }
-}
-@media (max-width: 800px) {
   .tabs__textarea {
     overflow: auto;
   }
-}
-@media (max-width: 800px) {
   .tabs__body {
     width: 95%;
   }
