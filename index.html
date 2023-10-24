@@ -453,7 +453,13 @@
             <div class="tabs__textarea">
               <h3 class="tabs__textarea__title">QR code generator</h3>
               <p class="tabs__textarea__description">
-                The script starts by maximizing a transparent window on which the x and y coordinates of the
+
+
+                This application launches a transparent, maximized window that captures mouse click coordinates using the <b>Mouse package</b>, then utilizes <b>PIL's ImageGrab</b> to generate an image. The user is presented with an elegant GUI to scan the generated image, with <b>OpenCV</b> detecting QR codes and displaying the decoded data. An 'image-file.png' is generated, and users may require elevated privileges to run the app. Simply click the top-left and bottom-right corners of the QR code you wish to scan after executing the program.
+                
+                
+                
+                <!-- The script starts by maximizing a transparent window on which the x and y coordinates of the
                 mouse
                 clicks will be used as variables with the <b>mouse package</b> to generate an image with the
                 <b>PIL
@@ -464,7 +470,7 @@
                 will need
                 an existing QR code to scan before executing the script. Once you run the app click the
                 top-left
-                corner followed by clicking the bottom-right corner of the code you want to read.
+                corner followed by clicking the bottom-right corner of the code you want to read. -->
               </p>
               <div class="p__links">
                 <a target="_blank" class="p__fancylink" href="https://github.com/westoleaboat/qr-codeReader">Source

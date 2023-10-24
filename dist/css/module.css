@@ -313,6 +313,7 @@ hr {
 @media (max-width: 1200px) {
   .p__project {
     flex-direction: column;
+    opacity: 1;
     gap: 2rem;
   }
 }
